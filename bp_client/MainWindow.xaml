@@ -1,0 +1,32 @@
+﻿<Window x:Class="qdf_test_wpf_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:qdf_test_wpf_1"
+        mc:Ignorable="d"
+        Title="DOTA BP工具" Height="350" Width="525" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="gamesBox" HorizontalAlignment="Left" Height="303" Margin="10,10,0,0" VerticalAlignment="Top" Width="131"/>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Height="23" Margin="213,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="createGame" Content="创建游戏" HorizontalAlignment="Left" Margin="338,10,0,0" VerticalAlignment="Top" Width="75" Click="createGame_Click"/>
+        <Button x:Name="joinGame" Content="加入游戏" HorizontalAlignment="Left" Margin="418,10,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.267,0.429" Click="joinGame_Click"/>
+        <Label x:Name="label" Content="玩家名称" HorizontalAlignment="Left" Margin="146,10,0,0" VerticalAlignment="Top" Height="23"/>
+        <Label x:Name="stateMsg" Content="" HorizontalAlignment="Left" Margin="146,38,0,0" VerticalAlignment="Top" Width="347"/>
+        <ListBox x:Name="ban1" HorizontalAlignment="Left" Height="100" Margin="149,83,0,0" VerticalAlignment="Top" Width="100"/>
+        <ListBox x:Name="ban2" HorizontalAlignment="Left" Height="100" Margin="149,213,0,0" VerticalAlignment="Top" Width="100"/>
+        <ListBox x:Name="pick1" HorizontalAlignment="Left" Height="100" Margin="269,83,0,0" VerticalAlignment="Top" Width="100"/>
+        <ListBox x:Name="pick2" HorizontalAlignment="Left" Height="100" Margin="269,213,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label x:Name="player1ban" Content="BAN" HorizontalAlignment="Left" Margin="149,59,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="player2ban" Content="BAN" HorizontalAlignment="Left" Margin="149,188,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="player1pick" Content="PICK" HorizontalAlignment="Left" Margin="269,59,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="player2pick" Content="PICK" HorizontalAlignment="Left" Margin="269,188,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="heroText" HorizontalAlignment="Left" Height="23" Margin="374,174,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="97"/>
+        <Button x:Name="bpSubmit" Content="确定" HorizontalAlignment="Left" Margin="476,174,0,0" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.484,-0.429" Click="bpSubmit_Click"/>
+        <Label x:Name="label1" Content="英雄名称" HorizontalAlignment="Left" Margin="374,145,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="quitButton" Content="退出本次BP" HorizontalAlignment="Left" Margin="418,292,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="quitButton_Click"/>
+    </Grid>
+</Window>
